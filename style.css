@@ -1,0 +1,32 @@
+.c-spinner{
+  border: 4px solid #83aff7;
+  border-top: 4px solid #4286f4;
+  border-right: 4px solid #6bdbac;
+  border-bottom: 4px solid #a3db6b;
+  border-left: 4px solid #d1db6b;
+  border-radius: 100%;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+#c-overlay{
+  height:100%;
+  width:100%;
+  position:fixed;
+  left:0;
+  top:0;
+}
